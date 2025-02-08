@@ -663,7 +663,7 @@ export default definePreset(Aura, {
             background: "{primary.color}",
             color: "{primary.contrastColor}",
             gap: "0",
-            padding: "0 1rem",
+            padding: "0 3rem",
             border: "0",
             borderWidth : "0",
             base : {

@@ -1,43 +1,27 @@
 <script setup>
 
 import { ref } from "vue";
+import { useTenancyStore } from '~/layers/tenancy/store/tenancy';
 
+const { name, logo, menu } = useTenancyStore();
 
 function toggleDarkMode() {
     document.documentElement.classList.toggle('my-app-dark');
 }
 
 
-const items = ref([
-    {
-        label: 'Home',
-        route: '/',
-    },
-    {
-        label: 'Vehicles',
-        route: '/vehicles',
-    },
-    {
-        label: 'Vehicle 123',
-        route: '/vehicles/123',
-    },
-    {
-        label: 'Login',
-        route: '/login',
-    }
-
-]);
 </script>
 
 <template>
     <div class="guest-layout">
         <header>
-            <Menubar :model="items" class="menubar" >
+            <Menubar :model="menu" class="menubar">
                 <template #start>
-                    <router-link  v-slot="{ href, navigate }" to="/">
+                    <router-link v-slot="{ href, navigate }" to="/">
 
-                    <img src="/assets/images/logo.svg" alt="PrimeVue Logo" class="p-1" width="120" />
+                        <img :src="logo" :alt="name" class="p-1" width="120" />
                     </router-link>
+                    
                     <svg width="35" height="40" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg"
                         class="h-8">
                         <path d="..." fill="var(--p-primary-color)" />
@@ -62,6 +46,10 @@ const items = ref([
                     <div class="flex items-center gap-2">
                         <!-- <Button label="Toggle Dark Mode" @click="toggleDarkMode()" /> -->
                     </div>
+
+                    <div class="flex items-center gap-2">
+                        <Avatar image="/assets/images/amyelsner.png" shape="circle" />
+                    </div>
                 </template>
             </Menubar>
         </header>
@@ -83,7 +71,9 @@ const items = ref([
 .p-menubar-root-list {
     >.p-menubar-item {
         position: relative;
-        &.p-focus,&:hover {
+
+        &.p-focus,
+        &:hover {
             &::after {
                 height: 5px;
             }

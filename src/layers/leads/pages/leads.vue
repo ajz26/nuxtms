@@ -4,28 +4,26 @@
 const route = useRoute()
 
 useHead({
-  title: 'Vehicles',
+  title: 'Leads',
   meta: [
     { name: 'description', content: 'My amazing site.' }
   ],
-  bodyAttrs: {
-    class: 'test'
-  },
+
 })
 
 definePageMeta({
     layout: 'general',
-    title: 'Dashboard',
-    path: '/',
+    title: 'Vehicles',
 })
+
+
 
 </script>
 
 <template>
     <div>
-       dashboard
-
-
-       poner aqui cajas de dashboard
+        <h1>Leads</h1>
+      
+        {{ route.params.id }}        
     </div>
 </template>
