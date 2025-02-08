@@ -5,7 +5,7 @@
 <template>
     <div class="guest-layout">
         <header>
-            <h1>Welcome to Our Site</h1>
+            <h1>Layout guest</h1>
         </header>
         <main>
           <slot />

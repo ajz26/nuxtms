@@ -1,8 +1,17 @@
 
 import preset from './src/theme'
 
+import { resolve } from "path";
+
+
+
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
+  extends : [
+    resolve(__dirname, "./src/layers/auth"),
+    resolve(__dirname, "./src/layers/stock"),
+    resolve(__dirname, "./src/layers/dashboard"),
+  ],
   devtools: { enabled: true },
   modules: [
     '@pinia/nuxt',

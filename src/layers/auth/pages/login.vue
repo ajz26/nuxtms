@@ -10,6 +10,10 @@
               <InputText v-model="$field.value" type="password" placeholder="Password" :class="[{ error: $field?.invalid }]" @input="$field.onInput" @blur="$field.onBlur" @change="$field.onChange" />
               <Message v-if="$field?.invalid" severity="error" size="small" variant="simple">{{ $field.error?.message }}</Message>
           </FormField>
+
+          <NuxtLink to="/" class="text-sm text-right">Forgot Password?</NuxtLink>
+
+          <NuxtLink to="/" class="text-sm text-right">dashboard</NuxtLink>
           <Button type="submit" severity="secondary" label="Submit" />
       </Form>
   </div>
@@ -34,11 +38,8 @@ useHead({
 })
 
 definePageMeta({
-    layout: 'general',
+    layout: 'guest',
     title: 'login',
-    description: 'Here is a list of vehicles',
-    image: 'https://example.com/image.jpg',
-    url: 'https://example.com/vehicles'
 })
 
 const toast = useToast();

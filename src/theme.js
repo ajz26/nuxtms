@@ -5,7 +5,7 @@ import { definePreset } from "@primevue/themes";
 export default definePreset(Aura, {
     primitive: {
         borderRadius: {
-            none: "0",
+            none: "0px",
             xs: "2px",
             sm: "4px",
             md: "6px",
@@ -316,8 +316,8 @@ export default definePreset(Aura, {
             100: "#f6c7c7",
             200: "#ef9b9b",
             300: "#e86f6f",
-            400: "#e14242",
-            500: "#da1616",
+            400: "#2a415a",
+            500: "#2a415a",
             600: "#b91313",
             700: "#990f0f",
             800: "#780c0c",
@@ -363,7 +363,7 @@ export default definePreset(Aura, {
             }
         },
         content: {
-            borderRadius: "{border.radius.md}"
+            borderRadius: "{border.radius.none}"
         },
         mask: {
             transitionDuration: "0.15s"
@@ -414,7 +414,7 @@ export default definePreset(Aura, {
                     200: "#e2e8f0",
                     300: "#cbd5e1",
                     400: "#94a3b8",
-                    500: "#64748b",
+                    500: "#2a415a",
                     600: "#475569",
                     700: "#334155",
                     800: "#1e293b",
@@ -657,5 +657,32 @@ export default definePreset(Aura, {
                 }
             }
         }
+    },
+    components:  {
+        menubar: {
+            background: "{primary.color}",
+            color: "{primary.contrastColor}",
+            gap: "0",
+            padding: "0 1rem",
+            border: "0",
+            borderWidth : "0",
+            base : {
+                item : {
+                    padding: "1.2rem 1rem",
+                }
+            },
+            item:{
+                focusBackground: "transparent",
+                color: "{primary.contrastColor}",
+                focusColor: "{primary.contrastColor}",
+                hoverColor: "transparent",
+            },
+            mobile: {
+                button : {
+                    color: "{primary.contrastColor}",
+                }
+            }
+        }
+       
     }
 });

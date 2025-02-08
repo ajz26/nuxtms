@@ -17,10 +17,9 @@ useHead({
 definePageMeta({
     layout: 'general',
     title: 'Vehicles',
-    description: 'Here is a list of vehicles',
-    image: 'https://example.com/image.jpg',
-    url: 'https://example.com/vehicles'
 })
+
+
 
 </script>
 
