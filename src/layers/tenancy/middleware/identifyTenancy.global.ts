@@ -35,16 +35,6 @@ export default defineNuxtRouteMiddleware(async (to, from) => {
         }
 
 
-        let preset = updatePreset({
-            semantic: {
-                primary: {
-                    400: 'red',
-                    500: 'red',
-                }
-            }
-        })
-    
-        usePreset(preset);
 
             
     }
@@ -55,6 +45,11 @@ export default defineNuxtRouteMiddleware(async (to, from) => {
     }
 
     
+    console.log("paso 2")
+
+    let preset = updatePreset(store.theme);
+
+    usePreset(preset);
 
 
 

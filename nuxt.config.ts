@@ -1,6 +1,7 @@
 import preset from "./src/preset";
-
 import { resolve } from "path";
+
+console.log("paso 1");
 
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",

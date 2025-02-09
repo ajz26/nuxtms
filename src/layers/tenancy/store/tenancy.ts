@@ -4,7 +4,6 @@ let state = {
     id  : 0,
     host : null,
     logo : null,
-    theme : null,
     menu : [
         {
             label: 'Home',
@@ -28,7 +27,15 @@ let state = {
             route: '/login',
         }
     
-    ]
+    ],
+    theme : {
+        semantic: {
+            primary: {
+                400: 'blue',
+                500: 'blue',
+            }
+        }
+    }
 }
 
 
