@@ -53,11 +53,30 @@ function toggleDarkMode() {
                 </template>
             </Menubar>
         </header>
-        <main>
+        <main class="main-content">
             <slot />
         </main>
-        <footer>
-            <p>&copy; 2023 Your Company. All rights reserved.</p>
+        <footer class="layout-footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img :src="logo" :alt="name" width="60" />
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; {{ new Date().getFullYear() }} {{ name }}. Todos los derechos reservados</p>
+                </div>
+                <div class="footer-stores">
+                    <a href="#" class="store-button">
+                    </a>
+                    <a href="#" class="store-button">
+                    </a>
+
+                
+                </div>
+                <div class="footer-links">
+                    <Button label="Ayuda" class="p-button-text" />
+                    <Button label="Guía" class="p-button-text" />
+                </div>
+            </div>
         </footer>
     </div>
 </template>
@@ -92,6 +111,64 @@ function toggleDarkMode() {
             transform: translateX(-50%);
             width: 50px;
 
+        }
+    }
+}
+
+.guest-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.layout-footer {
+    margin-top: auto;
+    background-color: var(--my-app-surface-500);
+    color: var(--my-app-surface-700);
+    border-top: 1px solid var(--my-app-surface-600);
+    padding: 1rem 2rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer-logo img {
+    height: auto;
+    object-fit: contain;
+}
+
+.footer-stores {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.store-button img {
+    height: 40px;
+    width: auto;
+}
+
+.footer-links {
+    display: flex;
+    gap: 0.5rem;
+    
+    .p-button-text {
+        color: var(--my-app-surface-contrast-color);
+        
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
         }
     }
 }
