@@ -8,11 +8,6 @@ export default defineNuxtRouteMiddleware(async (to, from) => {
     
     const store = useTenancyStore();
     
-   
-
-
-    
-
     var tenancy = null;
 
     if(import.meta.server){
@@ -33,24 +28,14 @@ export default defineNuxtRouteMiddleware(async (to, from) => {
             store.logo = data.value.logo;
             store.theme = data.value.theme;
         }
-
-
-
-            
     }
 
-    if(!store.id){
-        console.log("No se ha detectado tenancy");  
-       return abortNavigation();
-    }
-
-    
-    console.log("paso 2")
+    // if(!store.id){
+    //    return abortNavigation();
+    // }
 
     let preset = updatePreset(store.theme);
 
     usePreset(preset);
-
-
 
 })

@@ -1,4 +1,3 @@
-
 <script setup>
 
 const route = useRoute()
@@ -11,8 +10,9 @@ useHead({
 })
 
 definePageMeta({
-    layout: 'general',
-    title: 'Vehicles',
+  layout: 'general',
+  title: 'Vehicles',
+  path: '/vehicles/:id',
 })
 
 
@@ -20,10 +20,10 @@ definePageMeta({
 </script>
 
 <template>
-    <div>
-        <h1>Vehicles</h1>
+  <div>
+    <h1>Vehicles</h1>
 
-        {{ route.params.id }}
-        <p>Here is a list of vehicles</p>
-    </div>
+    {{ route.params.id }}
+    <p>Here is a list of vehicles</p>
+  </div>
 </template>

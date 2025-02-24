@@ -1,5 +1,5 @@
 <script setup>
-   
+
 </script>
 
 <template>
@@ -8,7 +8,7 @@
             <h1>Layout guest</h1>
         </header>
         <main>
-          <slot />
+            <slot />
         </main>
         <footer>
             <p>&copy; 2023 Your Company. All rights reserved.</p>

@@ -7,12 +7,11 @@ let state = {
     menu : [
         {
             label: 'Home',
-            route: '/',
+            url: '/',
         },
         {
             label: 'Leads',
-            url: 'https://app.leadcars.es/leads',
-            target : '_blank'
+            url: '/leads',
         },
         {
             label: 'Vehicles',
@@ -24,7 +23,7 @@ let state = {
         },
         {
             label: 'Login',
-            route: '/login',
+            url: '/login',
         }
     
     ],

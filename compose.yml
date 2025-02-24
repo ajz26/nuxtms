@@ -1,0 +1,22 @@
+version: "3.8"
+name: app2
+services:
+  app2:
+    build:
+      context: ./docker
+    ports:
+      - 3000:3000
+    working_dir: /srv/app
+    volumes:
+      - type: bind
+        source: ./
+        target: /srv/app
+    tty: true
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - leadcars
+networks:
+  leadcars:
+    driver: bridge
+    external: true

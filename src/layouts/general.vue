@@ -17,16 +17,9 @@ function toggleDarkMode() {
         <header>
             <Menubar :model="menu" class="menubar">
                 <template #start>
-                    <router-link v-slot="{ href, navigate }" to="/">
-
+                    <a :to="menu[0].url">
                         <img :src="logo" :alt="name" class="p-1" width="120" />
-                    </router-link>
-                    
-                    <svg width="35" height="40" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        class="h-8">
-                        <path d="..." fill="var(--p-primary-color)" />
-                        <path d="..." fill="var(--p-text-color)" />
-                    </svg>
+                    </a>
                 </template>
                 <template #item="{ item, props, hasSubmenu }">
                     <router-link v-if="item.route" v-slot="{ href, navigate }" :to="item.route" custom>
@@ -70,7 +63,7 @@ function toggleDarkMode() {
                     <a href="#" class="store-button">
                     </a>
 
-                
+
                 </div>
                 <div class="footer-links">
                     <Button label="Ayuda" class="p-button-text" />
@@ -163,10 +156,10 @@ function toggleDarkMode() {
 .footer-links {
     display: flex;
     gap: 0.5rem;
-    
+
     .p-button-text {
         color: var(--my-app-surface-contrast-color);
-        
+
         &:hover {
             background-color: rgba(255, 255, 255, 0.1);
         }

@@ -1,14 +1,17 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
+import { useTolgee } from '@tolgee/vue'
+
+const { t } = useTolgee()
 
 const user = ref({
   name: 'Usuario Demo'
 })
 
 definePageMeta({
-    layout: 'general',
-    title: 'Dashboard',
-    path: '/',
+  layout: 'general',
+  title: 'Dashboard',
+  path: '/',
 });
 
 const totalSales = ref(0)
@@ -47,6 +50,8 @@ onMounted(async () => {
           <div class="stat-value">{{ monthlyRevenue }}</div>
         </div>
       </div>
+
+      {{ $t('hello') }}
     </div>
   </div>
 </template>
@@ -83,6 +88,6 @@ onMounted(async () => {
   background: white;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 </style>

@@ -5,11 +5,11 @@ const props = defineProps({
   error: Object as () => NuxtError
 })
 </script>
- 
+
 <template>
   <div>
- 
- asd
+
+    asd
     <h1>{{ error?.statusCode }}</h1>
     <NuxtLink to="/">Go back home</NuxtLink>
   </div>

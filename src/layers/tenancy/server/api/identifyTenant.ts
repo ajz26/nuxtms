@@ -1,7 +1,7 @@
 export default defineEventHandler((event) => {
 
 
-    if(event.node.req.headers.host === 'localhost:3000'){
+    if(true){
 
     return {
       name: 'leadcars',
