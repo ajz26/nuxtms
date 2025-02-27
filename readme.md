@@ -232,3 +232,316 @@ Usar verbos http para las acciones.
 
 
 
+# Listado de campos para vehículos : Turismos vos [Stock]
+– Foto
+- Matricula
+- Estado
+- Tags
+- En preparación
+- Web
+- Procedencia
+- Man Code
+- Marca
+- Modelo
+- Versión
+- Color
+- Potencia
+- Fecha matriculación
+- PVP
+- PVF
+- KMS
+- Ubicación
+- Antiguedad
+- IVA
+- KM0
+
+
+# Listado de campos para vehículos : Turismos vos [Vehículos comerciales]
+– Foto
+- Matricula
+- Estado
+- Tags
+- En preparación
+- Web
+- Procedencia
+- Man Code
+- Marca
+- Modelo
+- Versión
+- Color
+- Potencia
+- Fecha matriculación
+- PVP
+- PVF
+- KMS
+- Ubicación
+- Antiguedad
+- IVA
+- KM0
+
+# Listado de campos para vehículos : Turismos vos [Stock CV]
+– Foto
+- Matricula
+- Estado
+- Tags
+- Procedencia
+- Man Code
+- Marca
+- Modelo
+- Versión
+- Color
+- Potencia
+- Fecha matriculación
+- PVD
+- KMS
+- Ubicación
+- Antiguedad
+- IVA
+- KM0
+
+# Listado de campos para vehículos : Turismos vos [Stock Antiguedad]
+– Foto
+- Matricula
+- Marca
+- Modelo
+- Estado
+- Fecha matriculación
+- KMS
+- Garantia
+- PVP
+- PVF
+- P. compra
+- Usuario Precio
+- Antiguedad
+- Antiguedad Precio
+- IVA
+
+
+# Listado de campos para vehículos : Turismos vos [Stock Entrada futura]
+
+– Foto
+- Matricula
+- Fecha entrada
+- Marca
+- Modelo
+- Fecha matriculación
+- PVP
+- PVF
+- KMS
+- Antiguedad
+- Vehículo comercial
+- IVA
+
+# Listado de campos para vehículos : Turismos vos [Turismos bloqueados]
+
+
+– Foto
+- Matricula
+- Bloqueado (Estado)
+- Marca
+- Modelo
+- Fecha matriculación
+- PVP
+- PVF
+- PVD
+- KMS
+- Ubicación
+- IVA
+- Usuario bloqueado
+- Fin bloqueo
+
+
+
+# Listado de campos para vehículos : Turismos vos [Validación VO]
+– Foto
+- Matricula
+- Tags
+- Marca
+- Modelo
+- Fecha matriculación
+- PVP
+- PVF
+- PVD
+- Ubicación
+- Entrada futura
+- Vehículo comercial
+- IVA
+- Comercial
+
+
+# Listado de campos para vehículos : Turismos vos [Inventario]
+- Foto
+- Matricula
+- Ref. 
+- Bastidor
+- Estado
+- Tags
+- Vendible **
+- Concesionario
+- Fecha matriculación
+- Antiguedad Compra
+- Antiguedad
+- Antiguedad Precio
+- Man code
+- Marca
+- Modelo
+- Versión
+- Combustible
+- Transmision
+- Color
+- Kms
+- Puertas
+- Tapiceria
+- IVA
+- Pub web.
+- En preparación
+- Procedencia
+- PVP 
+- PVF
+- PVD
+- Precio compra
+- Ubicación
+- Listado
+- Cliente
+- Entrada futura
+
+
+
+# Listado de campos para vehículos : Turismos vos [Stock Precios]
+- Foto
+- Matricula
+- Estado
+- Tags
+- Marca
+- Modelo
+- Fecha de precio
+- PVP
+- PVF 
+- PVD
+- Kms
+- contactos
+- Antiguedad
+- Usuario
+- IVA
+
+# Listado de campos para vehículos : Turismos vos [Historico]
+- Foto
+- Matricula
+- Marca
+- Modelo
+- Version
+- Fecha matriculación
+- PVP
+- Precio venta
+- Motivo baja
+- Fecha baja
+- Antiguedad
+- Comercial
+- Usuario pedido
+- Cliente
+
+
+# Listado de campos para vehículos : Turismos vos [Stock en portales]
+
+Foto
+Marca y modelo
+Matricula
+Concesionario
+Sede
+Procedencia
+PVP
+PVF
+Sede publicación
+Estado
+[...todos los portales]
+Fotos
+Dias Stock
+Oferta Especial
+
+
+
+
+# Listado de campos para vehículos : Stock vn [Stock]
+– Foto
+- Bastidor
+- Estado
+- Man Code
+- Ref
+- Marca
+- Modelo
+- Versión
+- Potencia 
+- Color
+- Fecha efectividad
+- PVP 
+- PVF
+- Ubicación
+- Bono
+- Antiguedad
+
+
+# Listado de campos para vehículos : Stock vn [Ofertas VNS]
+– Foto
+- Bastidor
+- Man Code
+- Ref
+- Marca
+- Modelo
+- Versión
+- Potencia 
+- Color
+- Fecha efectividad
+- PVP 
+- PVF
+- Ubicación
+- Bono
+- Antiguedad
+
+
+# Listado de campos para vehículos : Stock vn [Turismos bloqueados]
+
+- Foto
+- Bastidor
+- Matricula
+- Bloqueado (estado)
+- Man code
+- Ref
+- Marca
+- Modelo
+- Version
+- Potencia
+- Color
+- Fecha efectividad
+- PVP
+- PVF
+- Ubicación
+- Bono
+- Antiguedad
+
+# Listado de campos para vehículos : Stock vn [Historico de stock Vn]
+
+- Foto
+- Bastidor
+- Marca
+- Modelo
+- Version
+- PVP
+- precio venta
+- Motivo de Baja
+- Fecha baja
+- comercial
+- usuario pedido
+- cliente
+
+
+# Listado de campos para vehículos : Stock vn [Stock de vns en portales]
+
+- Foto
+- Marca y modelo
+- Bastidor
+- Concesionario 
+- Procedencia
+- Estado
+- [...todos los portales]
+- Fotos (numero de fotos)
+- Dias Stock

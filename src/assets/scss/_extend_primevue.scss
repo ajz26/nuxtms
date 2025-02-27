@@ -1,0 +1,6 @@
+/* PrimeVue Personalización */
+@layer _extend_primevue {
+  .p-button {
+    font-size: var(--my-app-button-font-size);
+  }
+}

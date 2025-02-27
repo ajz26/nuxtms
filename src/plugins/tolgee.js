@@ -1,19 +1,19 @@
 import { Tolgee, DevTools, VueTolgee, FormatSimple } from "@tolgee/vue";
 import { markRaw } from "vue";
-
 export default defineNuxtPlugin((nuxtApp) => {
   const tolgee = Tolgee()
     .use(DevTools())
     .use(FormatSimple())
     .init({
-      language: "es-ES",
+      language: "es",
       apiUrl: process.env.NUXT_PUBLIC_TOLGEE_API_URL,
       apiKey: process.env.NUXT_PUBLIC_TOLGEE_API_KEY,
-      fallbackLanguage: "es-ES",
-      staticData: markRaw({
-        "es-ES": () =>
-          import("../lang/es-ES/index").then((module) => module.default),
-      }),
+      fallbackLanguage: "es",
+      staticData: {
+        es: import("../lang/es.json").then((module) => module.default),
+        pt: import("../lang/pt.json").then((module) => module.default),
+        it: import("../lang/it.json").then((module) => module.default),
+      },
     });
 
   // @ts-ignore - Tolgee instance is compatible with Vue plugin

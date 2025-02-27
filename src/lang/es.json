@@ -1,0 +1,9 @@
+{
+  "hello": "Hola",
+  "copyright": "{year} {company} todos los derechos reservados",
+  "searchform.advanced": "Filtros avanzados",
+  "vehicles.title": "Listado de vehículos",
+  "vehicles.searchform.title": "Buscador de vehículos",
+  "searchform.vehicles.with_images": "Con imágenes",
+  "searchform.vehicles.only_available": "Sólo disponibles"
+}

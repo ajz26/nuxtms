@@ -35,6 +35,15 @@ onMounted(async () => {
       </div>
     </header>
 
+    <Button rounded>
+      {{ $t('hello') }}
+    </Button>
+
+    <Button severity="success" rounded> success </Button>
+    <Button severity="info" rounded> info </Button>
+
+    <InputText />
+
     <div class="dashboard-content">
       <div class="stats-grid">
         <div class="stat-card">

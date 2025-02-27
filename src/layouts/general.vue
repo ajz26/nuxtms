@@ -1,24 +1,18 @@
 <script setup>
 
-import { ref } from "vue";
 import { useTenancyStore } from '~/layers/tenancy/store/tenancy';
 
 const { name, logo, menu } = useTenancyStore();
 
-function toggleDarkMode() {
-    document.documentElement.classList.toggle('my-app-dark');
-}
-
-
 </script>
 
 <template>
-    <div class="guest-layout">
+    <div class="auth-layout">
         <header>
             <Menubar :model="menu" class="menubar">
                 <template #start>
                     <a :to="menu[0].url">
-                        <img :src="logo" :alt="name" class="p-1" width="120" />
+                        <img src="~/assets/images/leadcars.svg" :alt="name" class="p-1" width="120" />
                     </a>
                 </template>
                 <template #item="{ item, props, hasSubmenu }">
@@ -41,7 +35,9 @@ function toggleDarkMode() {
                     </div>
 
                     <div class="flex items-center gap-2">
-                        <Avatar image="/assets/images/amyelsner.png" shape="circle" />
+                        <Avatar shape="circle">
+                            <img src="~/assets/images/amyelsner.png" alt=" Avatar" />
+                        </Avatar>
                     </div>
                 </template>
             </Menubar>
@@ -55,7 +51,10 @@ function toggleDarkMode() {
                     <img :src="logo" :alt="name" width="60" />
                 </div>
                 <div class="footer-copyright">
-                    <p>&copy; {{ new Date().getFullYear() }} {{ name }}. Todos los derechos reservados</p>
+                    <p>&copy; {{ $t('copyright', {
+                        year: new Date().getFullYear(),
+                        company: "Company"
+                    }) }}</p>
                 </div>
                 <div class="footer-stores">
                     <a href="#" class="store-button">

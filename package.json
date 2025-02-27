@@ -15,6 +15,7 @@
     "@primevue/themes": "^4.2.5",
     "@tolgee/core": "^6.1.1",
     "@tolgee/vue": "^6.1.1",
+    "jose": "^6.0.6",
     "nuxt": "^3.15.4",
     "primevue": "^4.2.5",
     "vue": "latest",

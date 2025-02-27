@@ -13,6 +13,7 @@ definePageMeta({
   layout: 'general',
   title: 'Vehicles',
   path: '/vehicles/:id',
+
 })
 
 

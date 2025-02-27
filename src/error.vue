@@ -1,16 +1,24 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app'
+import { useRouter } from 'vue-router';
+const router = useRouter()
 
 const props = defineProps({
   error: Object as () => NuxtError
 })
+
+
+const handleClearError = () => {
+  clearError()
+  router.push('/')
+}
+
 </script>
 
 <template>
   <div>
-
-    asd
     <h1>{{ error?.statusCode }}</h1>
-    <NuxtLink to="/">Go back home</NuxtLink>
+    esta es la página de error
+    <button @click="handleClearError()">Go back home</button>
   </div>
 </template>
