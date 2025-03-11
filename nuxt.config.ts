@@ -1,8 +1,8 @@
 import preset from "./src/preset";
 import { resolve } from "path";
+import { h } from "vue";
 
 export default defineNuxtConfig({
-  ssr: true,
   compatibilityDate: "2024-11-01",
   extends: [
     resolve(__dirname, "./src/layers/tenancy"),
@@ -18,7 +18,8 @@ export default defineNuxtConfig({
   
   css: [
     "~/assets/scss/app.scss",
-    "~/assets/fonts/lc-icons/style.css"
+    "~/assets/fonts/lc-icons/style.css",
+    'vue-final-modal/style.css'
   ],
   primevue: {
     options: {
@@ -32,7 +33,40 @@ export default defineNuxtConfig({
           darkModeSelector: ".my-app-dark",
         },
         preset: preset,
+       
       },
+      pt : {
+
+        paginator : {
+          first: {
+            class: "p-paginator-first custom-paginator-button",
+            innerHTML: '<i class="lc-icon-arrow-right-end rotate-180"></i>',
+          },
+          prev: {
+            class: "p-paginator-prev custom-paginator-button",
+            innerHTML: '<i class="lc-icon-arrow-right rotate-180"></i>',
+          },
+          next: {
+            class: "p-paginator-next custom-paginator-button",
+            innerHTML: '<i class="lc-icon-arrow-right"></i>',
+          },
+          last: {
+            class: "p-paginator-last custom-paginator-button",
+            innerHTML: '<i class="lc-icon-arrow-right-end"></i>',
+          }
+        },
+        datatable: {
+          // column : {
+          //   root : "text-center",
+          //   columnTitle: "ml-auto",
+          //   sort : "mr-auto",
+          //   bodyCell: {
+          //     root : "text-center",
+          //   }
+          // },
+         
+        }
+      }
     },
   },
   vite: {

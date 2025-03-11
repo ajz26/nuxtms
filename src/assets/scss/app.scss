@@ -36,3 +36,88 @@ h4,
   font-size: 1rem;
   font-weight: 600;
 }
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+button.custom-paginator-button {
+  font-size: 0.7rem;
+}
+
+.text-small {
+  font-size: 0.8rem;
+}
+
+.text-mutted {
+  color: var(--my-app-gray-400);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.d-block {
+  display: block;
+}
+
+.space-y-4 {
+  gap: 1rem;
+}
+
+.space-y-2 {
+  gap: 0.5rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}

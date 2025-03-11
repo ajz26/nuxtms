@@ -19,6 +19,11 @@ const props = defineProps({
     default: 'left',
     required: false,
   },
+  readonly: {
+    type: Boolean,
+    default: false,
+    required: false,
+  },
 });
 </script>
 
@@ -26,7 +31,7 @@ const props = defineProps({
   <div class="custom-switch" :class="{ 'flex-row-reverse': position === 'right' }">
 
     <label :for="inputId">{{ label }}</label>
-    <ToggleSwitch :inputId="inputId" :modelValue="modelValue">
+    <ToggleSwitch :inputId="inputId" :modelValue="modelValue" :readonly="readonly">
       <template #handle="{ checked }">
         <i :class="['small-icon', { 'lc-icon-tick': checked, 'lc-icon-cross': !checked }]" />
       </template>

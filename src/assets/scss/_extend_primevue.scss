@@ -3,4 +3,30 @@
   .p-button {
     font-size: var(--my-app-button-font-size);
   }
+
+  .p-paginator-current {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .p-toggleswitch {
+    &.p-disabled {
+      &.p-toggleswitch-checked {
+        .p-toggleswitch-slider {
+          background: var(--my-app-green-050);
+        }
+        .p-toggleswitch-handle {
+          background: var(--my-app-gray-100);
+        }
+      }
+    }
+  }
+
+  .p-datatable-scrollable {
+    td.p-datatable-frozen-column {
+      background: white;
+    }
+  }
 }

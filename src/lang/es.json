@@ -5,5 +5,17 @@
   "vehicles.title": "Listado de vehículos",
   "vehicles.searchform.title": "Buscador de vehículos",
   "searchform.vehicles.with_images": "Con imágenes",
-  "searchform.vehicles.only_available": "Sólo disponibles"
+  "searchform.vehicles.only_available": "Sólo disponibles",
+  "stock.published.onweb": "Publicado en mi web",
+  "stock.unpublished.onweb": "No publicado en mi web",
+  "stock.is.km0": "Sí es KM0",
+  "stock.not.km0": "No es KM0",
+  "stock.antiguedad.tooltip": "{antiguedad} días",
+  "createview.title": "Crear vista",
+  "createview.filters": "Filtros",
+  "createview.selectcolumns": "Seleccionar columnas",
+  "createview.frozen": "Congelar",
+  "createview.active": "Activo",
+  "cancel": "Cancelar",
+  "save": "Guardar"
 }

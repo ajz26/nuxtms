@@ -24,6 +24,17 @@ export default definePreset(Aura, {
       700: "#2d672f",
       800: "#A1CA3D",
     },
+    orange: {
+      "025": " #fff2dd",
+      "050": " #fce7c3",
+      "075": " #f9f3c9",
+      100: " #ebd5b1",
+      150: " #f6c169",
+      200: " #e0ae5a",
+      500: " #f5a623",
+      600: " orange",
+      900: " #e06c30",
+    },
     gray: {
       "020": " #f9fafb",
       "035": " #f2f2f2",
@@ -107,8 +118,8 @@ export default definePreset(Aura, {
           focusColor: "{primary.800}",
         },
         mask: {
-          background: "rgba(0,0,0,0.4)",
-          color: "{surface.200}",
+          background: "rgba(255,255,255,0.4)",
+          color: "{text.color}",
         },
         formField: {
           background: "{surface.0}",
@@ -331,8 +342,34 @@ export default definePreset(Aura, {
         },
       },
     },
+    maskBackground: "#ffffff",
   },
   components: {
+    checkbox: {
+      colorScheme: {
+        light: {
+          root: {
+            borderColor: "{primary.600}",
+          },
+        },
+      },
+    },
+    datatable: {
+      sortIcon: {
+        color: "{gray.300}",
+      },
+      header: {
+        padding: "0",
+        borderColor: "{primary.600}",
+      },
+      headerCell: {
+        padding: "1rem 1.2rem",
+        background: "{primary.600}",
+        color: "{primary.contrastColor}",
+        selectedBackground: "{primary.600}",
+        selectedColor: "{orange.500}",
+      },
+    },
     menubar: {
       background: "{primary.600}",
       color: "white",
@@ -414,6 +451,9 @@ export default definePreset(Aura, {
       },
     },
     toggleswitch: {
+      width: "3.417rem",
+      height: "1.917rem",
+      handleSize: "1.583rem",
       colorScheme: {
         light: {
           root: {
@@ -423,6 +463,7 @@ export default definePreset(Aura, {
           handle: {
             checkedBackground: "white",
             checkedHoverBackground: "{gray.050}",
+            disabledBackground: "{surface.300}",
           },
         },
         dark: {
@@ -439,6 +480,30 @@ export default definePreset(Aura, {
     },
     select: {
       borderRadius: "{borderRadius.sm}",
+    },
+
+    paginator: {
+      nav: {
+        button: {
+          height: "1.5rem",
+          width: "1.5rem",
+          borderRadius: "{borderRadius.sm}",
+        },
+      },
+      colorScheme: {
+        light: {
+          root: {
+            nav: {
+              button: {
+                selected: {
+                  background: "{primary.600}",
+                  color: "{primary.contrastColor}",
+                },
+              },
+            },
+          },
+        },
+      },
     },
   },
 });

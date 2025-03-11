@@ -19,7 +19,9 @@
     "nuxt": "^3.15.4",
     "primevue": "^4.2.5",
     "vue": "latest",
+    "vue-final-modal": "^4.5.5",
     "vue-router": "latest",
+    "vuedraggable": "^4.1.0",
     "zod": "^3.24.1"
   },
   "devDependencies": {

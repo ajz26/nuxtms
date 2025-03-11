@@ -1,6 +1,7 @@
 <script setup>
 
 import { useTenancyStore } from '~/layers/tenancy/store/tenancy';
+import { ModalsContainer } from 'vue-final-modal'
 
 const { name, logo, menu } = useTenancyStore();
 
@@ -70,6 +71,7 @@ const { name, logo, menu } = useTenancyStore();
                 </div>
             </div>
         </footer>
+        <ModalsContainer />
     </div>
 </template>
 
